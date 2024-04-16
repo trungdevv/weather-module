@@ -3,7 +3,6 @@ import {
   type AxiosResponse,
   type InternalAxiosRequestConfig,
 } from "axios";
-//   import { getItem } from './localStorage';
 
 export interface ConsoleError {
   status: number;
@@ -13,10 +12,6 @@ export interface ConsoleError {
 export const requestInterceptor = (
   config: InternalAxiosRequestConfig
 ): InternalAxiosRequestConfig => {
-  // const token = getItem<string>('token');
-  // if (token) {
-  //   config.headers.set('Authorization', `Bearer ${token}`);
-  // }
   return config;
 };
 
